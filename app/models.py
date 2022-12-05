@@ -5,4 +5,4 @@ from django.db import models
 
 class ImageModel(models.Model):
     image = models.ImageField(null=True, blank=True , upload_to="img")
-
+    color = models.CharField(max_length=11, default="")
